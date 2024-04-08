@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// import "semantic-ui-css/semantic.min.css"
 import './index.css';
-import App from './App';
+import App from './app/App';
+import {
+  Provider as Web3Provider,
+  Updater as Web3Updater,
+} from "./contexts/Web3";
+// import * as serviceWorker from './serviceWorker';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -9,9 +15,19 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Web3Provider>
+      <App />
+      <Web3Updater />
+    </Web3Provider>
   </React.StrictMode>
 );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById("root")
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

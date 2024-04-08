@@ -1,4 +1,9 @@
 .App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -14,8 +19,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +29,14 @@
   color: white;
 }
 
-.App-link {
+.Connect-button {
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  color: green;
+}
+
+/* .App-link {
   color: #61dafb;
 }
 
@@ -35,4 +47,19 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+/* .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
+
+.App-main {
+  margin-top: 50px;
+  flex: 1;
+  display: felx;
+  flex-direction: column;
+} */
